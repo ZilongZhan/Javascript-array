@@ -5,3 +5,11 @@
  */
 
 const SECONDS = [2, 5, 100];
+
+export const transformSecondsToWords = (SECONDS) => {
+  const seconds = SECONDS.map((number) => {
+    return number.toString();
+  })
+
+  return seconds;
+}

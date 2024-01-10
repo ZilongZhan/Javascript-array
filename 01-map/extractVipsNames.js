@@ -26,3 +26,11 @@ const VIPS = [
     age: 100,
   },
 ];
+
+export const extractVipsNames = (VIPS) => {
+  const vips = VIPS.map((vip) => {
+    return vip.name;
+  });
+
+  return vips;
+};
