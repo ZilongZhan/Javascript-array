@@ -8,6 +8,11 @@
 
 const MONKEYS = ["🐒", "🦍", "🦧"];
 
+/**
+ * @description Maps MONKEYS array with argument string
+ * @param {string} fruit 
+ * @returns {array};
+ */
 const feedMonkeys = function (fruit) {
   const monkeys = [];
   const collectionLength = MONKEYS.length;
