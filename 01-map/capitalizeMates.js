@@ -8,7 +8,7 @@ const MATES = ["john", "JACOB", "jinGleHeimer", "schmidt"];
 
 /**
  * @description Maps MATES array with formatted & capitalized string elements
- * @param {Array} MATES 
+ * @param {Array} MATES
  * @returns {Array}
  */
 export const capitalizeMates = (MATES) => {

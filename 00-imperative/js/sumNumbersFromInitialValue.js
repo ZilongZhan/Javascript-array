@@ -10,7 +10,7 @@ const NUMBERS = [1, 2, 3, 4, 5];
 
 /**
  * @description Returns sum of NUMBERS array beginning from argument number
- * @param {number} value 
+ * @param {number} value
  * @returns {number}
  */
 export const sumNumbersFromInitialValue = (value) => {

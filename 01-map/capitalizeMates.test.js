@@ -11,5 +11,5 @@ describe("Given function capitalizeMates", () => {
     // Assert
     expect(result).toBeDefined();
     expect(result).toEqual(["John", "Jacob", "Jingleheimer", "Schmidt"]);
-  })
+  });
 });

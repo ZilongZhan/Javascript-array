@@ -29,7 +29,7 @@ const VIPS = [
 
 /**
  * @description Returns array mapped with 'name' property string from argument object
- * @param {Object} VIPS 
+ * @param {Object} VIPS
  * @returns {Array}
  */
 export const extractVipsNames = (VIPS) => {
