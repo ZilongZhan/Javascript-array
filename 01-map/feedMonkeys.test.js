@@ -9,6 +9,7 @@ describe("Given funciton feedMonkeys", () => {
     const result = feedMonkeys(fruit);
 
     // Assert
+    expect(result).toBeDefined();
     expect(result).toEqual(["🐒 🍌", "🦍 🍌", "🦧 🍌"]);
   });
 
@@ -20,6 +21,7 @@ describe("Given funciton feedMonkeys", () => {
     const result = feedMonkeys(fruit);
 
     // Assert
+    expect(result).toBeDefined();
     expect(result).toEqual(["🐒 🍎", "🦍 🍎", "🦧 🍎"]);
   });
 });

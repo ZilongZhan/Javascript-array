@@ -54,3 +54,19 @@ const USERS = [
     isEnabled: true
   },];
  */
+
+/**
+ * @description Maps USERS object with 'id' & 'isEnabled' as new extra properties
+ * @param {Object} USERS
+ * @returns {Object}
+ */
+export const extendUsersSettings = (USERS) => {
+  const extendedSettings = USERS.map((user, index) => {
+    user.id = index;
+    user.isEnabled = true;
+
+    return user;
+  });
+
+  return extendedSettings;
+};
