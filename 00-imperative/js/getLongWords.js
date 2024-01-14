@@ -22,8 +22,8 @@ const getLongWords = (WORDS) => {
     const word = WORDS[index];
 
     if (word.length >= 5) {
-      words.push(word)
-    };
+      words.push(word);
+    }
   }
 
   return words;
