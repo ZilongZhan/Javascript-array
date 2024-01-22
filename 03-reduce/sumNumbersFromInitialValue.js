@@ -16,9 +16,9 @@ const NUMBERS = [1, 2, 3, 4, 5];
 export const sumNumbersFromInitialValue = (initialValue) => {
   const addNumbers = (summary, currentNumber) => {
     return summary + currentNumber;
-  }
+  };
 
   const finalSum = NUMBERS.reduce(addNumbers, initialValue);
 
-  return finalSum; 
-}
+  return finalSum;
+};

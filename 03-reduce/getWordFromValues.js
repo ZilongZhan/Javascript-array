@@ -8,7 +8,7 @@ const VALUES = [1, 2, 3];
 
 /**
  * @description returns all the argument array elements concatenated as a single string
- * @param {Array} values 
+ * @param {Array} values
  * @returns {String}
  */
 export const getWordFromValues = (values) => {

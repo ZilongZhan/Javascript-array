@@ -21,7 +21,7 @@ const VOTERS = [
 
 /**
  * @description returns the sum of all argument array's objects of which attribute 'voted: true'
- * @param {Array} voters 
+ * @param {Array} voters
  * @returns {Number}
  */
 export const getTotalVoters = (voters) => {

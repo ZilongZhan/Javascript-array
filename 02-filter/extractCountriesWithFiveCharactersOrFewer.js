@@ -8,7 +8,7 @@ const COUNTRIES = ["United Kingdom", "Italy", "France", "Portugal", "Greece"];
 
 /**
  * @description filters out the strings of which the length is <= 5 from the argument array
- * @param {Array} countries 
+ * @param {Array} countries
  * @returns {Array}
  */
 export const extractCountriesWithFiveCharactersOrFewer = (countries) => {

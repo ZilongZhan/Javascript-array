@@ -15,7 +15,7 @@ const LOCALES = ["EN", "GR", "FR", "IT", "PT"];
 
 /**
  * @description returns elements from argument array mapped with 'id' and 'enabled' as objects
- * @param {Array} locales 
+ * @param {Array} locales
  * @returns {Object}
  */
 export const createLocalesSettings = (locales) => {

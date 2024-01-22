@@ -10,6 +10,6 @@ describe("Given getWordFromValues function", () => {
 
     // Assert
     expect(result).toBeDefined();
-    expect(result).toEqual('123');
+    expect(result).toEqual("123");
   });
 });
