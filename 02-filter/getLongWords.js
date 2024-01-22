@@ -8,3 +8,13 @@
 
 const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 const BEATLES = ["John", "George", "Paul", "Ringo"];
+
+export const getLongWords = (WORDS) => {
+  const checkWordLength = (word) => {
+    return word.length >= 5;
+  }
+
+  const longWords = WORDS.filter(checkWordLength);
+  
+  return longWords;
+}
