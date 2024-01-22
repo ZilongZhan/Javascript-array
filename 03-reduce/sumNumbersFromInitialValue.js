@@ -14,11 +14,11 @@ const NUMBERS = [1, 2, 3, 4, 5];
  * @returns {Number}
  */
 export const sumNumbersFromInitialValue = (initialValue) => {
-  const addNumbers = (summary, currentNumber) => {
+  const toSumOf = (summary, currentNumber) => {
     return summary + currentNumber;
   };
 
-  const finalSum = NUMBERS.reduce(addNumbers, initialValue);
+  const finalSum = NUMBERS.reduce(toSumOf, initialValue);
 
   return finalSum;
 };

@@ -12,11 +12,11 @@ const VALUES = [1, 2, 3];
  * @returns {String}
  */
 export const getWordFromValues = (values) => {
-  const valueToString = (finalString, currentValue) => {
+  const toString = (finalString, currentValue) => {
     return `${finalString}${currentValue}`;
   };
 
-  const valueString = values.reduce(valueToString, "");
+  const valueString = values.reduce(toString, "");
 
   return valueString;
 };
