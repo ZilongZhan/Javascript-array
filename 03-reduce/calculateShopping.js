@@ -14,15 +14,15 @@ const WISHES = [
 
 /**
  * @description Reduces the argument array to the sum of its object's price
- * @param {Array} wishes 
+ * @param {Array} wishes
  * @returns {Number}
  */
 export const calculateShopping = (wishes) => {
   const toWishPrice = (wishPrice, currentWish) => {
     return wishPrice + currentWish.price;
-  }
+  };
 
   const totalPrice = wishes.reduce(toWishPrice, 0);
 
   return totalPrice;
-}
+};
