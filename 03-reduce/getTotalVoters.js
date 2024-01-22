@@ -18,3 +18,19 @@ const VOTERS = [
   { name: "Jeff", age: 30, voted: true },
   { name: "Zack", age: 19, voted: false },
 ];
+
+export const getTotalVoters = (voters) => {
+  const countVotes = (voters, currentVoter) => {
+    if (currentVoter.voted) {
+      return voters + 1;
+    }
+
+    return voters;
+  };
+
+  const totalVotes = voters.reduce(countVotes, 0);
+
+  return totalVotes;
+};
+
+console.log(getTotalVoters(VOTERS));

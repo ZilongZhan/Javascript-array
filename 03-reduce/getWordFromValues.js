@@ -5,3 +5,13 @@
  */
 
 const VALUES = [1, 2, 3];
+
+export const getWordFromValues = (values) => {
+  const valueToString = (finalString, currentValue) => {
+    return `${finalString}${currentValue}`;
+  };
+
+  const valueString = values.reduce(valueToString, "");
+
+  return valueString;
+};
