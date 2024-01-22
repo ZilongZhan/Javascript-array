@@ -7,3 +7,18 @@
  */
 
 const NUMBERS = [1, 2, 3, 4, 5];
+
+/**
+ * @description Returns sum of NUMBERS array beginning from argument number
+ * @param {Number} value
+ * @returns {Number}
+ */
+export const sumNumbersFromInitialValue = (initialValue) => {
+  const toSumOf = (summary, currentNumber) => {
+    return summary + currentNumber;
+  };
+
+  const finalSum = NUMBERS.reduce(toSumOf, initialValue);
+
+  return finalSum;
+};

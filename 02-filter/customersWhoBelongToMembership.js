@@ -26,3 +26,20 @@ const CUSTOMERS = [
     member: true,
   },
 ];
+
+/**
+ * @description filters out the objets from CUSTOMER array where member: true
+ * @param {Array} customers
+ * @returns {Array}
+ */
+export const customersWhoBelongToMembership = (customers) => {
+  const filterCustomers = (customer) => {
+    return customer.member === true;
+  };
+
+  const members = customers.filter(filterCustomers);
+
+  return members;
+};
+
+console.log(customersWhoBelongToMembership(CUSTOMERS));

@@ -8,3 +8,18 @@
 
 const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 const BEATLES = ["John", "George", "Paul", "Ringo"];
+
+/**
+ * @description filters out the strings of which the length is >= 5 from the argument array
+ * @param {Array} WORDS
+ * @returns {Array}
+ */
+export const getLongWords = (WORDS) => {
+  const checkWordLength = (word) => {
+    return word.length >= 5;
+  };
+
+  const longWords = WORDS.filter(checkWordLength);
+
+  return longWords;
+};

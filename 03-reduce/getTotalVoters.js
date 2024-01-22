@@ -18,3 +18,24 @@ const VOTERS = [
   { name: "Jeff", age: 30, voted: true },
   { name: "Zack", age: 19, voted: false },
 ];
+
+/**
+ * @description returns the sum of all argument array's objects of which attribute 'voted: true'
+ * @param {Array} voters
+ * @returns {Number}
+ */
+export const getTotalVoters = (voters) => {
+  const toTrueVoters = (trueVoters, currentVoter) => {
+    if (currentVoter.voted) {
+      return trueVoters + 1;
+    }
+
+    return trueVoters;
+  };
+
+  const totalVotes = voters.reduce(toTrueVoters, 0);
+
+  return totalVotes;
+};
+
+console.log(getTotalVoters(VOTERS));
