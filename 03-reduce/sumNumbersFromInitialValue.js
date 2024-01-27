@@ -14,9 +14,7 @@ const NUMBERS = [1, 2, 3, 4, 5];
  * @returns {Number}
  */
 export const sumNumbersFromInitialValue = (initialValue) => {
-  const toSumOf = (summary, currentNumber) => {
-    return summary + currentNumber;
-  };
+  const toSumOf = (summary, currentNumber) => summary + currentNumber;
 
   const finalSum = NUMBERS.reduce(toSumOf, initialValue);
 

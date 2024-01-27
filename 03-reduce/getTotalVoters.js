@@ -25,6 +25,8 @@ const VOTERS = [
  * @returns {Number}
  */
 export const getTotalVoters = (voters) => {
+  const initialVoters = 0
+
   const toTrueVoters = (trueVoters, currentVoter) => {
     if (currentVoter.voted) {
       return trueVoters + 1;
@@ -33,9 +35,7 @@ export const getTotalVoters = (voters) => {
     return trueVoters;
   };
 
-  const totalVotes = voters.reduce(toTrueVoters, 0);
+  const totalVotes = voters.reduce(toTrueVoters, initialVoters);
 
   return totalVotes;
 };
-
-console.log(getTotalVoters(VOTERS));

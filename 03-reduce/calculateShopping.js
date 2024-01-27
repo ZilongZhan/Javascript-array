@@ -18,11 +18,11 @@ const WISHES = [
  * @returns {Number}
  */
 export const calculateShopping = (wishes) => {
-  const toWishPrice = (wishPrice, currentWish) => {
-    return wishPrice + currentWish.price;
-  };
+  const initialPrice = 0;
 
-  const totalPrice = wishes.reduce(toWishPrice, 0);
+  const toWishPrice = (wishPrice, currentWish) => wishPrice + currentWish.price;
+
+  const totalPrice = wishes.reduce(toWishPrice, initialPrice);
 
   return totalPrice;
 };
