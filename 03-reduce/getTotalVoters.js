@@ -25,7 +25,7 @@ const VOTERS = [
  * @returns {Number}
  */
 export const getTotalVoters = (voters) => {
-  const initialVoters = 0
+  const initialVoters = 0;
 
   const toTrueVoters = (trueVoters, currentVoter) => {
     if (currentVoter.voted) {
