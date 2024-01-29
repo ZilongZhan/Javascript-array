@@ -19,12 +19,14 @@ const LOCALES = ["EN", "GR", "FR", "IT", "PT"];
  * @returns {Object}
  */
 export const createLocalesSettings = (locales) => {
+  const initialObject = {};
+
   const toLocaleSettings = (locales, currentLocale, index) => {
     locales[currentLocale] = { id: index, enabled: currentLocale === "EN" };
     return locales;
   };
 
-  const localeSettings = LOCALES.reduce(toLocaleSettings, {});
+  const localeSettings = LOCALES.reduce(toLocaleSettings, initialObject);
 
   return localeSettings;
 };

@@ -33,13 +33,9 @@ const CUSTOMERS = [
  * @returns {Array}
  */
 export const customersWhoBelongToMembership = (customers) => {
-  const filterCustomers = (customer) => {
-    return customer.member === true;
-  };
+  const filterCustomers = (customer) => customer.member;
 
   const members = customers.filter(filterCustomers);
 
   return members;
 };
-
-console.log(customersWhoBelongToMembership(CUSTOMERS));

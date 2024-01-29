@@ -15,9 +15,7 @@ const BEATLES = ["John", "George", "Paul", "Ringo"];
  * @returns {Array}
  */
 export const getLongWords = (WORDS) => {
-  const checkWordLength = (word) => {
-    return word.length >= 5;
-  };
+  const checkWordLength = (word) => word.length >= 5;
 
   const longWords = WORDS.filter(checkWordLength);
 
